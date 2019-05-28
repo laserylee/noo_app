@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   get  '/mission' , to: 'static_page#mission' 
   get  '/contact' , to: 'static_page#contact'
 
+  resources :users
+  get  '/signup'  , to: 'users#new'
+  post '/signup'  , to: 'users#create'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

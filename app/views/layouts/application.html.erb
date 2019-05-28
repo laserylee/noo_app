@@ -10,8 +10,14 @@
 
   <body>
     <%= render 'layouts/header' %>
+    <div class="container">
+      <div class="center jumbotron-fluid">
+        <h1><%= yield(:title)%></h1>
+        <p class="lead"><%= yield(:description)%></p>
+      </div>
     <%= yield %>
     <%= render 'layouts/footer' %>
     <%= debug(params) %>
+    </div>
   </body>
 </html>
