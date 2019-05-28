@@ -1,5 +1,6 @@
 class StaticPageController < ApplicationController
   def home
+    flash.now[:success] = "SUCCESS!!!"
   end
 
   def help
