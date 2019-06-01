@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash.now[:success] = "Success"
+      flash.now[:success] = "Success: Created user: #{@user.name}."
       render 'show'
     else
       render 'new'
@@ -21,6 +21,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
   end
 
   def update

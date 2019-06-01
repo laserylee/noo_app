@@ -77,7 +77,7 @@ footer {
 input, textarea, select .uneditable_input {
   border: 1px solid #bbb;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   @include box_sizing;
 }
 
@@ -94,7 +94,12 @@ input {
 }
 
 .field_with_errors {
+  @extend .alert;
   .form-control {
     color: red;
   }
+}
+
+.btn {
+  margin-top: 15px;
 }
