@@ -18,6 +18,9 @@ gem 'jbuilder', '~> 2.5'                                        # Build JSON API
 gem 'bcrypt', '~> 3.1.7'                                        # Use ActiveModel has_secure_password
 gem 'bootstrap', '~> 4.3.1'
 gem 'bootstrap-will_paginate'
+gem 'carrierwave'                                               # Upload stuff
+gem 'mini_magick'                                               # Edit picture
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # gem 'redis', '~> 4.0'                                         # Use Redis adapter to run Action Cable in production

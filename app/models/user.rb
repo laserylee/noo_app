@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates( :name,
             presence: true,
             uniqueness: true,
-            length: { maximum:50 } )
+            length: { maximum:50, minimum:4} )
   validates( :email,
             presence: true,
             uniqueness: { case_sensitive:false },
@@ -12,7 +12,7 @@ class User < ApplicationRecord
   has_secure_password
   validates( :password,
             presence: true,
-            length: { maximum:6 } )
+            length: { minimum:6 } )
 
 private
 

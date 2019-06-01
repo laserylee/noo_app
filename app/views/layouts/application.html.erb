@@ -15,6 +15,7 @@
         <h1><%= yield(:title)%></h1>
         <p class="desc"><%= yield(:description)%></p>
       </div>
+      <%= render 'layouts/flashmesj' %>
     <%= yield %>
     <%= debug(params) %>
     </div>
