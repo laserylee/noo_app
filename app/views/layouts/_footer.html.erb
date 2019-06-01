@@ -1,8 +1,6 @@
 <footer>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-    </ul>
-  </nav>
+  <div class="d-flex flex-row-reverse">
+    <div class="p-1"><%= link_to "About",   about_path  , class:"footlink"%></div>
+    <div class="p-1"><%= link_to "Contact", contact_path, class:"footlink"%></div>
+  </div>
 </footer>

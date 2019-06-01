@@ -16,7 +16,7 @@ gem 'turbolinks', '~> 5'                                        # Turbolinks mak
                                                                 # more: https://github.com/turbolinks/turbolinks
 gem 'jbuilder', '~> 2.5'                                        # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'bcrypt', '~> 3.1.7'                                        # Use ActiveModel has_secure_password
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.3.1'
 gem 'bootstrap-will_paginate'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -38,6 +38,10 @@ end
 
 group :test do
   gem 'rails-controller-testing'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
