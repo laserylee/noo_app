@@ -19,12 +19,20 @@ body {
 .center {
     text-align: center;
 }
-
 .logo {
+  border: 1px solid #777777;
+  box-shadow: 2px 2px #000000;
+  &:hover {
+    border: 1px solid #888888;
+  }
+}
+
+.logo-button {
   padding: 4px;
   padding-top: 0px;
+  padding-left: 1px;
   &:hover {
-    background-color: #222222;
+    background-color: #888888;
   }
 }
 
