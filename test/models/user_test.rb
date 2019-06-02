@@ -29,7 +29,6 @@ class UserTest < ActiveSupport::TestCase
   test "password" do
     @another = User.new(name:"Tester", email:"Tester@gmail.com")
     assert_not @another.save
-    byebug
     @another.password = @another.password_confirmation = " " * 6
     assert_not @another.valid?
     @another.password = "foobar"
