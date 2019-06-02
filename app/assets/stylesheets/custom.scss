@@ -54,8 +54,19 @@ h1 {
 .nav-item {
   padding-top: 0px;
   &:hover {
-    background-color: #222222;
+    background-color: #303030;
   }
+}
+
+.nav-link {
+  &:hover {
+    color: #eeeeee;
+    text-shadow: 2px 4px black;
+  }
+}
+
+.active {
+  text-shadow: 1px 2px black;
 }
 
 /* footer */
@@ -102,8 +113,3 @@ input {
   margin-top: 15px;
 }
 
-/* alert */
-.alert {
-  font-size: 0.9em;
-  margin: auto;
-}
