@@ -1,4 +1,11 @@
 <%= provide(:title, "About") %>
-
-<h1>StaticPage#about</h1>
-<p>Find me in app/views/static_page/about.html.erb</p>
+<div class="headertitle">About</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="big_plate col-md-10 center mt-md-4">
+    <%= image_tag("self.jpeg", alt:"creator's avatar", size:"200x200", class:"logo mb-md-3 mt-3") %>
+    <p>This website is created by LaseryLee<br>
+    email: laserylee2013@gmail.com<br>
+    source: <a href="https://github.com/laserylee/noo_app">https://github.com/laserylee/noo_app<a></p>
+  </div>
+</div>
