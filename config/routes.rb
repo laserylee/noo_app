@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get  '/about'   , to: 'static_page#about'   
   get  '/mission' , to: 'static_page#mission' 
   get  '/contact' , to: 'static_page#contact'
+  get  '/logo'    , to: 'static_page#logo'
 
   resources :users
   get  '/signup'  , to: 'users#new'

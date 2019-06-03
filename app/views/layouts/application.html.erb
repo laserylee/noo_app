@@ -10,10 +10,6 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <div class="container-fluid">
-      <div class="jumbotron center">
-        <h1><%= yield(:header)%></h1>
-      </div>    
     <%= render 'layouts/flashmesj' %>
     <%= yield %>
     <%= debug(params) %>

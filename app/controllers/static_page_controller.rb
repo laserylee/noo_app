@@ -13,4 +13,8 @@ class StaticPageController < ApplicationController
 
   def contact
   end
+
+  def logo
+  end
+
 end

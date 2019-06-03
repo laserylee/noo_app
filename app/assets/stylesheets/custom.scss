@@ -72,6 +72,16 @@ h1 {
     text-shadow: 2px 4px black;
   }
 }
+.dropdown-link {
+  @extend .nav-link;
+  font-size: 1em;
+  font-family: Ubuntu Mono;
+  color: #eeeeee;
+  &:hover {
+    color: white;
+    text-shadow: 0px 2px black;
+  }
+}
 
 .active {
   text-shadow: 1px 2px black;
