@@ -36,6 +36,20 @@ body {
   }
 }
 
+.logo-special {
+  &:hover {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+.headertitle {
+  @extend h1;
+  @extend .jumbotron;
+  padding: 40px;
+  text-align: center
+}
+
 .big_plate {
   background-color: #dddddd;
   margin: 5px;
