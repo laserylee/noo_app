@@ -1,6 +1,7 @@
 <% provide(:header, "Sign In") %>
+<div class="headertitle">Sign In</div>
 <div class="row">
-  <div class="col-md-6 offset-md-3">
+  <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 mt-3">
 <%= form_for(:session, url:login_path) do |f| %>
   <%= f.label :email %>
   <%= f.email_field :email, class:'form-control' %>

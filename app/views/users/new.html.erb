@@ -1,7 +1,7 @@
 <% provide(:title, "Sign Up") %>
 <div class="headertitle">Sign Up</div>
 <div class="row">
-  <div class="col-md-6 offset-md-3">
+  <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 mt-3">
   <%= form_for(@user, url: signup_path) do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
 
